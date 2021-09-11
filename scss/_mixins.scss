@@ -1,0 +1,15 @@
+@mixin center-flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin setCard($background, $border-rad){
+    background-color: $background;
+    border-radius: $border-rad;
+
+    button {
+        color: $background;
+    }
+
+}

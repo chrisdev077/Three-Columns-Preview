@@ -1,0 +1,148 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 10em 1em;
+  font-size: 15px;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: min(400px, 90%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", "sans-serif";
+}
+
+body .container p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", "sanserif";
+}
+
+body .container button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+body .container .card {
+  padding: 2em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+body .container .card button:hover {
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+body .container > :nth-child(1) {
+  background-color: #e38826;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+body .container > :nth-child(1) button {
+  color: #e38826;
+}
+
+body .container > :nth-child(2) {
+  background-color: #006970;
+  border-radius: 0;
+}
+
+body .container > :nth-child(2) button {
+  color: #006970;
+}
+
+body .container > :nth-child(3) {
+  background-color: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+body .container > :nth-child(3) button {
+  color: #004241;
+}
+
+@media (min-width: 1220px) {
+  body .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+  }
+  body .container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 30rem;
+  }
+  body .container .card header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .card header h1 {
+    font-size: 2.5rem;
+  }
+  body .container .card button {
+    margin-top: 10em;
+    width: 10rem;
+    height: 3.2rem;
+  }
+  body .container > :nth-child(1) {
+    background-color: "";
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  body .container > :nth-child(1) button {
+    color: "";
+  }
+  body .container > :nth-child(3) {
+    background-color: "";
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  body .container > :nth-child(3) button {
+    color: "";
+  }
+}
+/*# sourceMappingURL=styles.css.map */

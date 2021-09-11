@@ -1,0 +1,93 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+  @include center-flex();
+  flex-direction: column;
+  background-color: $transparent-white;
+  margin: 10em 1em;
+  font-size: 15px;
+  
+  .container {
+    @include center-flex();
+    width: unquote("min(400px, 90%)");
+    flex-direction: column;
+    h1 {
+      color: $very-light-gray;
+      font-family: $font-heading;
+    }
+    p {
+      color: $transparent-white;
+      font-family: $font-paragraph;
+    }
+    button {
+      width: 8rem;
+      height: 2.5rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      border: none;
+    }
+    .card {
+      padding: 2em;
+      flex-basis: 100%;
+      button:hover {
+        color: $very-light-gray;
+        border: 1px solid $very-light-gray;
+      }
+    }
+  }
+  .container > :nth-child(1) {
+    @include setCard($bright-orange, 0.5rem 0.5rem 0 0);
+  }
+  .container > :nth-child(2) {
+    @include setCard($dark-cyan, 0);
+  }
+  .container > :nth-child(3) {
+    @include setCard($very-dark-cyan, 0 0 0.5rem 0.5rem);
+  }
+  @media (min-width:1220px){
+
+    .container{
+        flex-direction: row;
+        width: 70%;
+        border-radius: 0.5rem;
+        border: 2px solid black;
+        .card{ 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 30rem;
+
+            header{
+                display: flex;
+                flex-direction: column;
+                // padding: 10%;
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            button{
+                margin-top: 10em;
+                width: 10rem;
+                height: 3.2rem;
+            }
+        }   
+
+    }
+   
+
+    .container > :nth-child(1) {
+        @include setCard("", 0.5rem 0 0 0.5rem);
+        
+        
+    }
+    
+      .container > :nth-child(3) {
+        
+        @include setCard("", 0 0.5rem 0.5rem 0);
+        
+    }
+ }
+}
+
