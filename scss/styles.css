@@ -98,7 +98,6 @@ body .container > :nth-child(3) button {
             flex-direction: row;
     width: 70%;
     border-radius: 0.5rem;
-    border: 2px solid black;
   }
   body .container .card {
     display: -webkit-box;
